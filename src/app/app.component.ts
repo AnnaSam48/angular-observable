@@ -1,8 +1,13 @@
 import * as Rx from 'rxjs';
 import { Component } from '@angular/core';
 
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
+})
 
-export AppComponent{
+export AppComponent implements OnInit{
 
 function addItem(val:any) {
     var node = document.createElement("li");
